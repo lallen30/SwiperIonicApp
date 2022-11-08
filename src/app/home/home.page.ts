@@ -1,8 +1,8 @@
 import { AfterContentChecked, Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SwiperComponent } from 'swiper/angular';
-import SwiperCore, { Autoplay, Keyboard, Pagination, Scrollbar, SwiperOptions, Zoom, EffectCube } from 'swiper';
+import SwiperCore, { Autoplay, Keyboard, Pagination, Scrollbar, SwiperOptions, Zoom } from 'swiper';
 
-SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom, EffectCube]);
+SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom]);
 
 
 @Component({
