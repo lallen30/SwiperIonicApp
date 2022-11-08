@@ -6,6 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
+<!--
 <ion-content>
   <swiper #swiper [allowTouchMove]="false">
     <ng-template swiperSlide>Slide 1</ng-template>
@@ -14,6 +15,14 @@
     <ng-template swiperSlide>Slide 4</ng-template>
     <ng-template swiperSlide>Slide 5</ng-template>
     <ng-template swiperSlide>Slide 6</ng-template>
+  </swiper>
+</ion-content>
+-->
+<ion-content>
+  <swiper #swiper [config]="config">
+    <ng-template swiperSlide *ngFor="let img of images">
+      <img [src]="img">
+    </ng-template>
   </swiper>
 </ion-content>
 
